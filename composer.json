@@ -1,0 +1,37 @@
+{
+    "name": "omar/user-registration",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "doctrine/dbal": "^3.7",
+        "doctrine/orm": "^2.16",
+        "ramsey/uuid": "^4.7",
+        "ramsey/uuid-doctrine": "^2.1",
+        "symfony/cache": "^5.3",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.3",
+        "symfony/var-dumper": "^6.3",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs-fix": "php-cs-fixer fix",
+        "stan": "phpstan analyse src tests --level=8"
+    }
+}

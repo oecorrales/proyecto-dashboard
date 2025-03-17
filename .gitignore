@@ -1,0 +1,13 @@
+/vendor/
+composer.lock
+
+.env
+
+/var/
+/logs/
+
+/phpunit.xml
+/tests/_output/
+/tests/_support/_generated/
+
+.idea/
